@@ -1,0 +1,302 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+/*Обнуление*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 140px auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (minmax(250px, auto))[2];
+      grid-template-rows: repeat(2, minmax(250px, auto));
+  gap: 20px;
+}
+
+.grid .card-1,
+.grid .card-2,
+.grid .card-5 {
+  color: white;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card__client {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.card__title {
+  line-height: 1.6rem;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.card__title-d {
+  color: #48556a;
+}
+
+.card__about {
+  color: rgba(207, 207, 207, 0.7);
+  line-height: 1.6rem;
+}
+
+.card__about-d {
+  color: gray;
+}
+
+.client__img {
+  padding-right: 10px;
+}
+
+.client__img > img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  border: 1px #fff solid;
+}
+
+.client__img-5 img {
+  border: 1px #7541c8 solid;
+}
+
+.client__name {
+  color: #cfcfcf;
+  padding-bottom: 5px;
+}
+
+.client__name-d {
+  color: #48556a;
+}
+
+.client__graduate {
+  color: rgba(207, 207, 207, 0.5);
+}
+
+.client__graduate-d {
+  color: #bdb8b8;
+}
+
+.card-1 {
+  background-color: #7541c8;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.card-2 {
+  background-color: #48556a;
+}
+
+.card-3 {
+  background-color: #fff;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+}
+
+.card-4 {
+  background-color: #fff;
+}
+
+.card-5 {
+  background-color: #19212e;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #cc7338;
+  color: cornsilk;
+}
+
+.footer div > span {
+  color: #114227;
+  margin-left: 10px;
+}
+
+.svg {
+  position: absolute;
+  top: -30px;
+  right: 50px;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 20px;
+  }
+  .card {
+    padding: 25px;
+  }
+  .card h1 {
+    font-size: 20px;
+  }
+  .svg {
+    top: -10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 20px 20px;
+  }
+  .card h1 {
+    font-size: 15px;
+  }
+  .svg {
+    right: -10px;
+    top: -20px;
+  }
+}
